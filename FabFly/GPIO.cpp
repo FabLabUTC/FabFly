@@ -1,8 +1,9 @@
 #include "GPIO.h"
 
-const bool INPUT = false;
-const bool OUTPUT = true;
-const float MAXPOW = 3.3f;
+GPIO::GPIO()
+{
+
+}
 GPIO::GPIO(int Number)
 {
 	this->GPIONumber = Number;
@@ -45,28 +46,30 @@ void GPIO::RecvSignal(char* Buffer, int Start, int Length, int BitPerSecond)
 {
 }
 
-void GPIO::operator=(bool Value)
+
+//Implémentation de base déstiné à un usage des GPIO pour les objets simples (LED et autres loupiottes par exemple)
+void GPIO::SetBoolean(bool Value)
 {
-	this->operator=(Value ? MAXPOW : 0.0f);
+	this->SetValue(Value ? MAXPOW : 0.0f);
 }
 
-void GPIO::operator=(unsigned char Value)
+void GPIO::SetByte(unsigned char Value)
 {
-	this->operator=((MAXPOW * Value) / __UINT8_MAX__);
+	this->SetValue((MAXPOW * Value) / __UINT8_MAX__);
 }
-void GPIO::operator=(float Value)
+void GPIO::SetPower(float Value)
 {
 	this->SetValue(Value > MAXPOW ? MAXPOW : Value < 0 ? 0 : Value);
 }
-GPIO::operator bool()
+bool GPIO::GetBoolean()
 {
 	return this->GetValue() > MAXPOW / 2;
 }
-GPIO::operator unsigned char()
+unsigned char GPIO::GetByte()
 {
-	return (this->GetValue / MAXPOW) * __UINT8_MAX__;
+	return (this->GetValue() / MAXPOW) * __UINT8_MAX__;
 }
-GPIO::operator float()
+float GPIO::GetPower()
 {
 	return this->GetValue();
 }
