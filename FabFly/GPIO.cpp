@@ -39,6 +39,7 @@ void GPIO::SetValue(float Value)
 
 void GPIO::Signal(char* Buffer, int Start, int Length, int BitPerSecond)
 {
+
 }
 
 

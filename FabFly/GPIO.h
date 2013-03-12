@@ -27,8 +27,9 @@ public:
 	virtual bool GetBoolean      ();
 	virtual float GetPower       ();
 	virtual unsigned char GetByte();
+	int GPIONumber;
 private:
 	bool IOType;
-	int GPIONumber;
+	
 };
 

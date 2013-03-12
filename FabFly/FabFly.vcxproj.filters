@@ -21,6 +21,15 @@
     <ClCompile Include="GPIO.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="Motor.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Accelerometre.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadCopt.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="flags.mak" />
@@ -28,6 +37,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPIO.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Motor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Accelerometre.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadCopt.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

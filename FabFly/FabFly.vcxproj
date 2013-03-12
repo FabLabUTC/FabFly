@@ -53,15 +53,21 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Accelerometre.cpp" />
     <ClCompile Include="FabFly.cpp" />
     <ClCompile Include="GPIO.cpp" />
+    <ClCompile Include="Motor.cpp" />
+    <ClCompile Include="QuadCopt.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="flags.mak" />
     <None Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Accelerometre.h" />
     <ClInclude Include="GPIO.h" />
+    <ClInclude Include="Motor.h" />
+    <ClInclude Include="QuadCopt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
