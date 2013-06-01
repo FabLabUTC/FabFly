@@ -16,7 +16,7 @@
       <DebuggedProgram>$(TargetPath)</DebuggedProgram>
       <UseGDBServer>false</UseGDBServer>
       <GDBServerHost>
-        <HostName>127.0.0.1:2232</HostName>
+        <HostName>10.50.0.10</HostName>
         <Transport>SSH</Transport>
         <UserName>pi</UserName>
       </GDBServerHost>
@@ -27,7 +27,7 @@
     </LaunchGDBSettings>
     <BuildCommand>
       <RemoteHost>
-        <HostName>127.0.0.1:2232</HostName>
+        <HostName>10.50.0.10</HostName>
         <Transport>SSH</Transport>
         <UserName>pi</UserName>
       </RemoteHost>
@@ -45,7 +45,7 @@
     </BuildCommand>
     <CleanCommand>
       <RemoteHost>
-        <HostName>127.0.0.1:2232</HostName>
+        <HostName>10.50.0.10</HostName>
         <Transport>SSH</Transport>
         <UserName>pi</UserName>
       </RemoteHost>
@@ -62,13 +62,13 @@
       </Environment>
     </CleanCommand>
     <RemoteHost>
-      <HostName>127.0.0.1:2232</HostName>
+      <HostName>10.50.0.10</HostName>
       <Transport>SSH</Transport>
       <UserName>pi</UserName>
     </RemoteHost>
     <MainSourceTransferCommand>
       <RemoteHost>
-        <HostName>127.0.0.1:2232</HostName>
+        <HostName>10.50.0.10</HostName>
         <Transport>SSH</Transport>
         <UserName>pi</UserName>
       </RemoteHost>

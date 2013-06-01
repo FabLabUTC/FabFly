@@ -30,6 +30,48 @@
     <ClCompile Include="QuadCopt.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\gertboard.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\lcd.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\piHiPri.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\piNes.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\piThread.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\softPwm.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\softServo.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\softTone.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPi.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPiFace.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPiI2C.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPiSPI.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringSerial.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringShift.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="flags.mak" />
@@ -46,6 +88,39 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="QuadCopt.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\gertboard.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\lcd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\piNes.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\softPwm.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\softServo.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\softTone.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringPi.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringPiI2C.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringPiSPI.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringSerial.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringShift.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

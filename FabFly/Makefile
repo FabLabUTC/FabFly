@@ -4,7 +4,7 @@
 #Visit http://visualgdb.com/makefiles for more details
 
 #VisualGDB: AutoSourceFiles		#<--- remove this line to disable auto-updating of SOURCEFILES and EXTERNAL_LIBS
-SOURCEFILES := FabFly.cpp GPIO.cpp
+SOURCEFILES := ../../wiringPI/wiringPi/gertboard.c ../../wiringPI/wiringPi/lcd.c ../../wiringPI/wiringPi/piHiPri.c ../../wiringPI/wiringPi/piNes.c ../../wiringPI/wiringPi/piThread.c ../../wiringPI/wiringPi/softPwm.c ../../wiringPI/wiringPi/softServo.c ../../wiringPI/wiringPi/softTone.c ../../wiringPI/wiringPi/wiringPi.c ../../wiringPI/wiringPi/wiringPiFace.c ../../wiringPI/wiringPi/wiringPiI2C.c ../../wiringPI/wiringPi/wiringPiSPI.c ../../wiringPI/wiringPi/wiringSerial.c ../../wiringPI/wiringPi/wiringShift.c Accelerometre.cpp FabFly.cpp GPIO.cpp Motor.cpp QuadCopt.cpp
 
 TARGETNAME := FabFly
 #TARGETTYPE can be APP, STATIC or SHARED
@@ -135,3 +135,46 @@ $(BINARYDIR)/%.o : %.S $(all_make_files) |$(BINARYDIR)
 	$(CC) $(CFLAGS) $(ASFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
 
 #VisualGDB: GeneratedRules				#<--- All lines below are auto-generated
+
+$(BINARYDIR)/gertboard.o : ../../wiringPI/wiringPi/gertboard.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/lcd.o : ../../wiringPI/wiringPi/lcd.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/piHiPri.o : ../../wiringPI/wiringPi/piHiPri.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/piNes.o : ../../wiringPI/wiringPi/piNes.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/piThread.o : ../../wiringPI/wiringPi/piThread.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/softPwm.o : ../../wiringPI/wiringPi/softPwm.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/softServo.o : ../../wiringPI/wiringPi/softServo.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/softTone.o : ../../wiringPI/wiringPi/softTone.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/wiringPi.o : ../../wiringPI/wiringPi/wiringPi.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/wiringPiFace.o : ../../wiringPI/wiringPi/wiringPiFace.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/wiringPiI2C.o : ../../wiringPI/wiringPi/wiringPiI2C.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/wiringPiSPI.o : ../../wiringPI/wiringPi/wiringPiSPI.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/wiringSerial.o : ../../wiringPI/wiringPi/wiringSerial.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+
+$(BINARYDIR)/wiringShift.o : ../../wiringPI/wiringPi/wiringShift.c $(all_make_files) |$(BINARYDIR)
+	$(CC) $(CFLAGS) -c $< -o $@ -MD -MF $(@:.o=.dep)
+

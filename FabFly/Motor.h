@@ -1,5 +1,5 @@
 #pragma once
-#include "gpio.h"
+#include "GPIO.h"
 
 struct Vector3 {
 	float X;

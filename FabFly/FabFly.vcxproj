@@ -41,6 +41,7 @@
     <NMakePreprocessorDefinitions>DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeForcedIncludes>gcc_defines.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakeOutput>$(ProjectDir)FabFly-Debug.vgdbsettings</NMakeOutput>
+    <NMakeIncludeSearchPath>C:\Users\nem-e_000\AppData\Local\VisualGDB\RemoteSourceCache\10.50.0.10\0000\include;C:\Users\nem-e_000\AppData\Local\VisualGDB\RemoteSourceCache\10.50.0.10\0001\lib</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)" "/config:$(ConfigurationName)" "/platform:$(PlatformName)"</NMakeBuildCommandLine>
@@ -53,6 +54,20 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\wiringPI\wiringPi\gertboard.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\lcd.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\piHiPri.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\piNes.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\piThread.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\softPwm.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\softServo.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\softTone.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPi.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPiFace.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPiI2C.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringPiSPI.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringSerial.c" />
+    <ClCompile Include="..\..\wiringPI\wiringPi\wiringShift.c" />
     <ClCompile Include="Accelerometre.cpp" />
     <ClCompile Include="FabFly.cpp" />
     <ClCompile Include="GPIO.cpp" />
@@ -64,6 +79,17 @@
     <None Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\wiringPI\wiringPi\gertboard.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\lcd.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\piNes.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\softPwm.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\softServo.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\softTone.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringPi.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringPiI2C.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringPiSPI.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringSerial.h" />
+    <ClInclude Include="..\..\wiringPI\wiringPi\wiringShift.h" />
     <ClInclude Include="Accelerometre.h" />
     <ClInclude Include="GPIO.h" />
     <ClInclude Include="Motor.h" />

@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:VFabFlySharp" x:Class="VFabFlySharp.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <local:arrow x:Name="Speed" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="120" Margin="160,90,0,0"/>
+        <Label x:Name="Spacing" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84"/>
+        <local:DashBoard x:Name="DB"/>
+        <Slider x:Name="SpeedX" HorizontalAlignment="Right" Height="26" Margin="0,0,50,0" VerticalAlignment="Top" Width="121" ValueChanged="SetSpeed"/>
+        <Slider x:Name="SpeedY" HorizontalAlignment="Right" Height="26" Margin="0,26,50,0" VerticalAlignment="Top" Width="121" ValueChanged="SetSpeed"/>
+        <TextBlock HorizontalAlignment="Right" Margin="467,0,0,0" TextWrapping="Wrap" Text="{Binding Value, ElementName=SpeedX}" VerticalAlignment="Top" Height="21" Width="50"/>
+        <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="{Binding Value, ElementName=SpeedY}" VerticalAlignment="Top" Height="21" Width="50" Margin="0,21,0,0"/>
+
+
+    </Grid>
+</Window>

@@ -4,7 +4,7 @@
 #Visit http://visualgdb.com/makefiles for more details
 
 #VisualGDB: AutoSourceFiles		#<--- remove this line to disable auto-updating of SOURCEFILES and EXTERNAL_LIBS
-SOURCEFILES := FabFly.cpp
+SOURCEFILES := Accelerometre.cpp FabFly.cpp GPIO.cpp Motor.cpp QuadCopt.cpp
 
 TARGETNAME := FabFly
 #TARGETTYPE can be APP, STATIC or SHARED
